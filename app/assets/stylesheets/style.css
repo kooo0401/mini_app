@@ -1,0 +1,82 @@
+.user_name {
+  font-size: 15px;
+  text-align: right;
+  display: block;
+  border-bottom: solid 2px white;
+}
+
+body {
+  background-color: whitesmoke	;
+}
+
+.user_list {
+  color: white;
+  position: fixed;
+  top: 8px;
+  right: 58px;
+}
+
+.darken-1 {
+  font-size: 15px;
+}
+
+textarea {
+  height: 10rem;
+  background-color: #FCB9DF;
+}
+
+.btn-flat {
+  color: #ffab40;
+  bottom: 6px;
+}
+
+.btn {
+  color: white;
+}
+
+.more_list {
+  height: 10rem;
+  background-color: #FCB9DF;
+  text-align: center;
+}
+
+.white-text{
+  text-align: center;
+}
+
+.success {
+  text-align: center;
+}
+
+.btn {
+  background-color: #FCB9DF;
+}
+
+.card {
+  color: white;
+}
+
+h3 {
+  color: #454E14
+}
+
+.light-green {
+  position: fixed;
+  z-index: 1;
+  height: 64px;
+  
+}
+
+.pagination {
+  background: #454E14;;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  height: 30px;
+  line-height: 30px;
+  bottom: 0;
+}
+
+.row {
+  padding: 64px 0 20px
+}

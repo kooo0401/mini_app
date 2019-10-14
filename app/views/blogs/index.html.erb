@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col s6 offset-s3">
+    <div class="card green darken-4">
+      <% @blogs.each do |blog|%>
+        <%= render partial: "blog", locals: { blog: blog } %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<%= paginate(@blogs) %>

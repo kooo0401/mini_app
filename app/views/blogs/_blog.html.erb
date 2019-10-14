@@ -1,0 +1,16 @@
+<div class="card-content pink lighten-4">
+  <span class="name"><%= blog.name %></span>
+  <p><%= simple_format(blog.text) %></p>
+</div>
+<div class="card-action pink lighten-4">
+  <% if user_signed_in? && current_user.id == blog.user_id %>
+      <span><%= link_to 'Edit', "/blogs/#{blog.id}/edit", method: :get %></span>
+      <span><%= link_to 'Delete', "/blogs/#{blog.id}", method: :delete %></span>
+  <% end %>
+  <span class="user_name">
+    <a href="/users/<%= blog.user.id %>">
+    <span>投稿者 ：</span><%= blog.user.name %> 
+    </a>
+    </span>
+  </span>
+</div>

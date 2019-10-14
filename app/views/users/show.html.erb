@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col s6 offset-s3">
+    <div class="card">
+      <p class="user_list"><%= @name %>さんの投稿</p>
+      <% @blogs.each do |blog| %>
+        <%= render partial: "blogs/blog", locals: {blog: blog} %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<%= paginate(@blogs) %>

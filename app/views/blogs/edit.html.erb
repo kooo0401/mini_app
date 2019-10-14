@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col s6 offset-s3">
+    <div class="card pink lighten-4">
+      <%= form_tag("/blogs/#{@blog.id}", method: :patch ) do %>
+        <textarea cols="30" name="text" placeholder="text" rows="10"><%= @blog.text %></textarea>
+        <a class="waves-effect waves-teal btn-flat"><input type="submit" value="SENT"></a>
+        <a class="waves-effect waves-teal btn-flat"><input type="reset" value="default"></a>
+      <% end %>
+    </div>
+  </div>
+</div>
